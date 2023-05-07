@@ -1,0 +1,288 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="images/unipun.png">
+    <title>Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fontawesome.com/icons/arrow-right-from-bracket?s=solid" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/alertify.min.css" rel="stylesheet">
+    <link href="css/default.min.css" rel="stylesheet">
+
+    
+    <script src="js/api.js"></script>
+
+    <link href="css/icheck-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min_2.css">
+    <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="css/adminlte.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.validate.unobtrusive.min.js"></script>
+    <script src="js/jquery-ui-1.8.20.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/adminlte.min.js"></script>
+    <link href="css/UserDefined.css" rel="stylesheet">
+    <!-- Datatable -->
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <script src="js/dataTables.bootstrap.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/demo.js"></script>
+    <!-- date-range-picker -->
+    <script src="js/daterangepicker.js"></script>
+    <link href="css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+    <script src="js/bootstrap-multiselect.js"></script>
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link href="css/jquery-ui.css" rel="stylesheet">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip({
+                boundary: "window"
+            });
+
+            alertify.set('notifier', 'position', 'top-right');
+        });
+    </script>
+</head>
+<body class="hold-transition sidebar-mini" style="font-size:small">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-fixed-top bg-white navbar-light border-bottom elevation-1">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav" style="font-size:16px">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+
+            </ul>
+            <span class="projetheading ml-2"> Online Result Display System </span>
+
+
+            <!-- Right navbar links -->
+
+
+
+
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-info elevation-4">
+            <!-- Brand Logo -->
+            <a class="brand-link">
+                
+
+                <img src="images/University_Logo.jpg" class="brand-image img-circle elevation-3">
+                
+                <span class="brand-text font-weight-heavy ml-2" style="color: white;font-size: large" title="Savitribai Phule Pune University">
+                    <marquee>Online Result Display System</marquee>
+                </span>
+                <span class="brand-text font-weight-heavy ml-2" style="color: white">
+                    
+                </span>
+            </a>
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul></ul>
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item mt-3">
+
+                            <a class="nav-link elevation-2" style="color: #fff; background-color: #117A65">
+                                <p>
+                                    <i class="fa fa-user-o nav-icon">
+                                    </i> Dashboard
+                                </p>
+
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Result/Dashboard/Default" data-toggle="tooltip">
+                                <p>
+                                    <i class="fa fa-home nav-icon">
+                                    </i> Home
+                                </p>
+                            </a>
+                        </li>
+                    
+
+
+
+
+                    </ul>
+                </nav>
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+        <!-- Contains page content -->
+        <div>
+            
+
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="container-fluid mt-5">
+        </div>
+    </section>
+    <section class="content">
+        <div class="container-fluid">
+
+            <div id="portlet-config" class="modal hide">
+                <div class="modal-header">
+                    <button data-dismiss="modal" class="close" type="button">
+                    </button>
+                    <h3>portlet Settings</h3>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Here will be a configuration form
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card card-info card-outline elevation-2">
+                <div class="card-header elevation-1" style="text-align: center">
+                    <small style="font-size: larger; font-weight: 600"></small>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                    </div>
+                </div>
+<form enctype="multipart/form-data" action="/Result/Dashboard/ViewResult" method="post">            <div class="card-body">
+
+
+                <div class="col-md-12" style="text-align:center">
+                    <div class="row">
+
+
+                        <div class="col-md-3" style="text-align:center">
+                            <div class="form-group">
+                                <label class="control-label">
+                                    <storng>Enter Seat No</storng>
+                                </label>
+                                <input class="form-control" id="PatternID" name="PatternID" type="hidden" value="6Qw72CLlcXSacHyT9a7RkQ==/">
+                                <input class="form-control" id="PatternName" name="PatternName" type="hidden" value="RP+zm4rXwFDLUrTpUWU4sAabjAKzjboZ1oOi7r/VvOe1HOwEU7IzR7u/9OCS5NYp">
+                            </div>
+
+                        </div>
+                        <div class="col-md-3" style="text-align:center">
+                            <div class="form-group">
+                                <input class="form-control" data-val="true" data-val-required="Please Enter Seat No." id="SeatNo" name="SeatNo" type="text" value>
+                                <span class="field-validation-valid text-danger" data-valmsg-for="SeatNo" data-valmsg-replace="true"></span>
+
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-3" style="text-align:center">
+                            <div class="form-group">
+                                <label class="control-label"><storng>Enter Mother Name</storng></label>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3" style="text-align:left">
+                            <div class="form-group">
+                                <input class="form-control" data-val="true" data-val-required="Please Enter Mother Name." id="MotherName" name="MotherName" type="text" value>
+                                <span class="field-validation-valid text-danger" data-valmsg-for="MotherName" data-valmsg-replace="true"></span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-5"> </div>
+                        <!-- <div class="col-md-4">
+                            <div class="form-group" style="text-align:center">
+
+                                <div class="g-recaptcha" data-sitekey="6LcOkAslAAAAAM8MpEalSLXipyWnu70lTQo1CQnX"></div>
+
+                              
+                            </div>
+                        </div>
+                        <div class="col-md-4">  </div> -->
+
+                    </div>
+                    </div>
+
+
+
+                    <div class="col-md-12">
+                        <div class="form-group" style="text-align:center">
+                            <span style="text-align:center">
+
+                               <input type="submit" value="Check Result" id="btn" class="btn btn-outline-info btn-lg elevation-2" style=" margin-left: 5px;" onclick="window.open('nishita.pdf'); return true;" >
+                            </span>
+                        </div>
+                    </div>
+
+                    <div style="text-align:center" class="col-md-12">
+                        <h5 style="text-align:center; color:darkcyan"> </h5>
+                    </div>
+                </div>
+</form>
+                <div class="modal fade" id="myModalWarning" role="dialog">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-body" style="text-align:center">
+                                <img src="images/Spiner.gif" style="height:75px;width:75px;text-align:center">
+                                <br>
+                                <span style="color:blue;font-size:medium;text-align:center">
+                                    Please wait.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+</div>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#myModalWarning').modal("hide");
+    });
+
+       function Wait() {
+            $('#myModalWarning').modal({ backdrop: "static" });
+        }
+
+    </script>
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <span style="font-weight: 600">Copyright © 2023 Savitribai Phule Pune University. All rights reserved.</span>
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+    <script src="js/alertify.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <link rel="stylesheet" href="css/font-awesome.min_1.css">
+
+
+
+
+
+</body></html>
